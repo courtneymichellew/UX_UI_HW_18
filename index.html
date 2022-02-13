@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Prata&display=swap" rel="stylesheet">
 </head>
+<title>Portfolio | Courtney Michelle Williams
+</title>
 <body>
   <header class="navigation">
     <div class="logo" class="inline-block">
@@ -23,83 +25,82 @@
     <section class="container2">
     <div id="aboutMe">
       <div class="introGraph" class="inline-block">
+        
         <div id="introText">
-        <h1 class="pageTopic">Hi, I'm Courtney Michelle</h1>
+          <h1 class="pageTopic">Hi, I'm Courtney Michelle</h1>
         <p class="pageTopic">A UX/UI Designer from Atlanta with a 10 year background in creating intuitive solutions for customers and users in the service industry. When designing, I aim to understand the major underlying problem and then create a tree of branched solutions that can be seamlessly applied to the customer journey ribbon. I am skilled in using design tools like, Figma, Miro, GitHub and Adobe Creative Suite.
         </p>
         </div>
       </div>
       <div class="headShot" class="inline-block">
-        <img src="Images/Courtney Williams_Headshot.jpeg" ID="centerHeadShot">
-      </div>  
+        <img src="Images/Courtney Williams_Headshot.jpeg" id="centerHeadShot">
+      </div> 
     </div>
-    
-    <div class="mySkills">
-      <div class="mySkillsTitle">
-        <h1 class="sectionTopic">My Skills
-        </h1>
-      </div>
+
+    <!--  My UX Skills section coded using CSS flex -->
+    <h1 class="sectionTopic">My Skills
+    </h1>
+
+    <div class="flexContainer">  
+
       <div class="mySkillsLeft" class="inline-block">
         <h3>UI DESIGNING & BRANDING</h3>
         <p class="textSkills">My skills as a graphic designer in Brand communications have greatly improved since taking the UI portion of the UX/UI Bootcamp by the Georgia Institute of Technology.
         </p>
       </div>
+
       <div class="mySkillsCenter" class="inline-block">
         <h3>PROTOTYPING
         </h3>
         <p class="textSkills">As a graphic designer, I am continuously going through the prototyping phase as I develop new designs for clients every day. After identifying and understanding their graphic communication needs, I create a draft (or prototype) of what the final product will look like. From here, the client and I test and improve the prototype until we land on a final product for distribution.
         </p>
       </div>
+
       <div class="mySkillsRight" class="inline-block">
         <h3>QUALITATIVE RESEARCH</h3>
         <p class="textSkills">During my time on a specialty team at Delta Air Lines, I was charged with improving the airport experience and service recovery experience through surveys, in-depth interviews, and observations. I gained valuable skills in synthesizing data and applying the results to creative initiatives for the benefit of the customer.
         </p>
       </div>
+
     </div>
+    
     <hr class="solid">
-    <div id="myWork">
-      <div class="myWorkTitle">
-        <h1 class="sectionTopic">My Work
-        </h1>
-      </div>
-      <div class="spacer">
-        <h1 id="spacer">Spacer</h1>
-      </div>
-      <div class="myWork1" class="inline-block">
-        <div class="myWork1text">
+    <div id=myWorkTitle>
+      <h1>My Work</h1>
+    </div>
+    <!--  My UX Work section coded using CSS flex -->
+    <div id="myWorkGrid">
+        <div id="myWork1text" class="gridArea">
         <h1>Camp Horizon
         </h1>
         <p>A non-profit which caters to neglected youth from foster care is in need of a website redesign to enhance the users trust and increase donations.
         </p>
         </div>
-        <div class="campHorizonLogo">
+        <div id="work1Logo" class="gridArea">
           <img src="Images/Camp_Horizon_logo.png" class="imgLogo">
         </div>
-      </div>
-      
-      <div class="myWork2" class="inline-block">
-        <div class="myWork2text">
+    
+        <div id="myWork2text" class="gridArea">
         <h1>BSure
         </h1>
         <p>The BSure app helps users to plan their post-pandemic travel with greater peace of mind by allowing them to monitor the cases of COVID-19 in the countries they want to travel to as well as receive alerts when the numbers change for any destination.
         </p>
         </div>
-        <div class="bsureLogo">
+        <div id="work2Logo" class="gridArea">
           <img src="Images/BSure-Logo.png" class="imgLogo">
         </div>
-      </div>
-      
-      <div class="myWork3" class="inline-block">
-        <div class="myWork3text">
+    
+        <div id="myWork3text" class="gridArea">
         <h1>JoyRide
         </h1>
         <p>The JoyRide app is for users in need of a safer way to rideshare. Its main feature is an SOS button that will allow users to communicate with police via text so as not to alert the driver. It also stores an emergency contact who is contacted by choice or when the SOS button has been activated.
         </p>
         </div>
-        <div class="joyRideLogo">
+        <div id="work3Logo" class="gridArea">
           <img src="Images/JoyRide_logo.png" class="imgLogo">
         </div>
-      </div>
+    </div>
+
       <hr class="solid">
       <div class="connectWithMe">
         <h1 id="connectText">Connect With Me!
@@ -108,14 +109,15 @@
       </div>
     </div>
     <footer id="contact">
-      <nav class="footerText" class="inline-block">
+      <nav class="footerText">
         <ul>
           <li class="inline-block">Courtney Williams</li>
           <li class="inline-block">Atlanta, Ga.</li>
           <li class="inline-block"><a href="mailto:courtneymichellew9@gmail.com" class="emailLink">courtneymichellew9@gmail.com</a></li>
         </ul>
-        <p>Copyright 2022</p>
+        
       </nav>
+      <p>Copyright 2022</p>
     </footer>
     </section>  
   </section>

@@ -21,10 +21,11 @@ p.textSkills {
 
 .navigation {
   /*outline: solid red 1px;*/
-  width: 1200px;
-  height: 134px;
+  display: flex;
+  width: 85%;
   margin: auto;
-  vertical-align: top;
+  vertical-align: middle;
+  justify-content: space-between;
   
 }
 .logo {
@@ -41,11 +42,14 @@ p.textSkills {
 }
 .navText {
   /*outline: solid red 1px;*/
-  display: inline-block;
+  /*display: inline-block;*/
   width: 30%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /*position: relative;
   right: -670px;
-  top: -55px;
+  top: -55px;*/
   font-family: 'Prata', serif;
   font-size: 10pt
 }
@@ -57,183 +61,189 @@ p.textSkills {
 
 .container {
   /*outline: solid red 1px;*/
-  width: 100%
+  width: 100%;
   
 }
 
 .container2 {
   outline: solid black 1px;
-  width: 1200px;
+  width: 85%;
   margin: auto;
 }
+
 #aboutMe {
   /*outline: solid red 1px;*/
-  height: 547px;
-  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   margin: auto;
-  background-color: #026873;
+  /*background-color: #026873;*/
   border-bottom: solid black 1px;
-
+  /*color: white;*/ 
+  color: black; 
+  /*grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "headShot introGraph";*/
 }
 
 .introGraph {
   /*outline: solid red 1px;*/
-  width: 690px;
-  height: 547px;
-  float: left; 
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
 }
-#introText {
-  /*outline: solid red 1px;*/
-  width: 500px;
-  position: relative;
-  top: 20%;
-  left: 15%;
-  color: white;
-}
+
+/*#introText {
+  /*outline: solid red 1px;
+  display: flex;
+  width: 100%;
+}*/
+
 .headShot {
   /*outline: solid red 1px;*/
-  width: 490px;
-  height: 547px;
-  float: right;
+  display: flex;
+  padding:30px;
+  align-items: center; 
+  justify-content: center;
 
 }
+
 #centerHeadShot {
-  display: block;
-  position: relative;
+  /*display: block;
+  height: 80%;*/
+  /*position: relative;
   top: 15%;
-  left: 10%;
-  box-shadow: 10px 10px 10px;
+  left: 10%;*/
+  box-shadow: black 10px 10px 10px;
 }
 
-.mySkills {
+.flexContainer {
   /*outline: solid red 1px;*/
-  width: 1200px;
-  height: 652px;
-  margin: auto;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.mySkillsTitle {
+
+.sectionTopic {
   /*outline: solid red 1px;*/
   height: 50px;
   text-align: center;
 }
+
 .mySkillsLeft {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  height: 400px;
-  width: 244px;
+  width: 33%;
+  margin: 5%;
+  /*height: 60%;
   position: relative;
   left: 60px;
-  top: 0%;
+  top: 0%;*/
 }
+
 .mySkillsCenter {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  height: 400px;
-  width: 244px;
+  width: 33%;
+  margin: 5%;
+  /*height: 60%;
   position: relative;
   right: -235px;
-  top: 18%;
+  top: 18%;*/
 }
+
 .mySkillsRight {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  height: 400px;
-  width: 244px;
+  width: 33%;
+  margin: 5%;
+  /*height: 60%;
   position: relative;
   right: -390px;
-  top: 14%;
+  top: 14%;*/
 }
-#myWork {
+
+#myWorkGrid {
   /*outline: solid red 1px;*/
-  width: 1200px;
+  display: grid;
+  width: 100%;
   margin: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "myWork1text work1Logo"
+  "myWork2text work2Logo"
+  "myWork3text work3Logo";
 }
-.myWorkTitle {
+
+#myWorkTitle {
   /*outline: solid red 1px;*/
   height: 50px;
   text-align: center;
 }
 
-.spacer {
+#myWork1text {
   /*outline: solid red 1px;*/
-  height: 30px;
-  width: 1200px;
-  margin: auto;
-  color: white;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
 }
-.myWork1 {
+#work1Logo {
   /*outline: solid red 1px;*/
-  position: relative; 
+  display: flex;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
 
-}
-.myWork1text {
+#myWork2text {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 40%;
-  position: relative;
-  right: -80px;
-  top: -200px;
+  width: 80%; 
+  margin: 20px;
+  padding: 20px;
 }
-.campHorizonLogo {
+#work2Logo {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 45%;
-  position: relative;
-  right: -170px;
-  top: 0px;
+  display: flex;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.myWork2 {
-  /*outline: solid red 1px;*/
-  position: relative; 
 
-}
-.myWork2text {
+#myWork3text {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 40%;
-  position: relative;
-  right: -80px;
-  top: -200px;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
 }
-.bsureLogo {
+#work3Logo {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 45%;
-  position: relative;
-  right: -170px;
-  top: 0px;
+  display: flex;
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.myWork3 {
-  /*outline: solid red 1px;*/
-  position: relative; 
 
-}
-.myWork3text {
-  /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 40%;
-  position: relative;
-  right: -80px;
-  top: -200px;
-}
-.joyRideLogo {
-  /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 45%;
-  position: relative;
-  right: -170px;
-  top: 0px;
-}
 .imgLogo {
   outline: solid black 1px;
+  width: 80%;
   box-shadow: 10px 10px 10px;
+}
+
+.gridArea {
+  
 }
 
 .connectWithMe {
   /*outline: solid red 1px;*/
-  width: 1200px;
-  height: 370px;
+  width: 100%;
+  padding-bottom: 40px;
   margin: auto;
 }
 
@@ -248,19 +258,23 @@ p.textSkills {
 }
 footer {
   /*outline: solid red 1px;*/
-  width: 1200px;
+  width: 100%;
   margin: auto;
-  background-color: #731247;
+  /*background-color: #731247;*/
+  /*color: white;*/
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 .footerText {
   /*outline: solid red 1px;*/
-  display: inline-block;
-  width: 70%;
-  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /*position: relative;
   right: -200px;
-  top: 0px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
+  top: 0px;*/
   border-top: solid black 1px;
 }
 
@@ -268,12 +282,12 @@ footer {
   padding: 40px;
   font-weight: bold;
 }
-.footerText p {
+footer p {
   text-align: center;
 }
 
 a.emailLink:link {
-  color: white;
+  color: black;
 }
 
 a.emailLink:hover {
@@ -284,10 +298,122 @@ a.navLink:link {
   color: black;
 }
 
+a.navLink:visited {
+  color: #731247;
+}
+
 a.navLink:hover {
   color: #026873;
 }
 
-a.navLink:visited {
-  color: #731247;
+@media only screen and (max-width: 600px) {
+  #aboutMe {
+    /*outline: solid red 1px;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    /*background-color: #026873;*/
+    border-bottom: solid black 1px;
+    color: black; 
+    /*grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "headShot"
+    "introGraph";*/
+  }
+
+  .introGraph {
+    /*outline: solid red 1px;*/
+    display: flex;
+    padding: 30px;
+  }
+  
+  /*#introText {
+    /*outline: solid red 1px;
+    display: flex;
+    width: 100%;
+  }*/
+  
+  .headShot {
+    /*outline: solid red 1px;*/
+    display: flex;
+    padding:30px;
+    align-items: center; 
+    justify-content: center;
+  
+  }
+  
+  #centerHeadShot {
+    /*display: block;
+    height: 80%;*/
+    /*position: relative;
+    top: 15%;
+    left: 10%;*/
+    width: 90%;
+    box-shadow: black 10px 10px 10px;
+  }
+
+  #myWorkGrid {
+    /*outline: solid red 1px;*/
+    flex-direction: column;
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "work1Logo"
+    "myWork1text" 
+    "work2Logo"
+    "myWork2text" 
+    "work3Logo"
+    "myWork3text";
+  }
+
+  .flexContainer {
+    /*outline: solid red 1px;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mySkillsLeft {
+    /*outline: solid red 1px;*/
+    width: 80%;
+    margin: 5%;
+    /*height: 60%;
+    position: relative;
+    left: 60px;
+    top: 0%;*/
+  }
+  
+  .mySkillsCenter {
+    /*outline: solid red 1px;*/
+    width: 80%;
+    margin: 5%;
+    /*height: 60%;
+    position: relative;
+    right: -235px;
+    top: 18%;*/
+  }
+  
+  .mySkillsRight {
+    /*outline: solid red 1px;*/
+    width: 80%;
+    margin: 5%;
+    /*height: 60%;
+    position: relative;
+    right: -390px;
+    top: 14%;*/
+  }  
+
+  .footerText {
+    /*outline: solid red 1px;*/
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
